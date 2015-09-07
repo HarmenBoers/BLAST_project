@@ -1,0 +1,15 @@
+
+========================[ Sep 1, 2015 12:17 PM ]========================
+ERROR: [000.000] No database name was specified
+
+========================[ Sep 1, 2015 12:25 PM ]========================
+Version 2.2.26 [Sep-21-2011]
+Started database file "../../db/all_seq.fasta"
+Formatted 209 sequences in volume 0
+SUCCESS: formatted database project_seqs
+
+========================[ Sep 1, 2015 12:36 PM ]========================
+Version 2.2.26 [Sep-21-2011]
+Started database file "../../db/all_seq.fasta"
+FDBFinish: Empty protein database...
+SUCCESS: formatted database project_seqs

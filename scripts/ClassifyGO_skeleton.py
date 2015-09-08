@@ -55,11 +55,14 @@ def parse(filename):
     ##########################
     ### START CODING HERE ####
     ##########################
-    
-    
+    with(open(filename, "rU")) as f:
+        for row in f:
+            proteins_list.append(row.rstrip())
+            #print(row)
     #######################
     ### END CODING HERE ###
     #######################
+    #print(proteins_list)
     return proteins_list
 
 # Given two sets of GO terms this function computes the score function.
@@ -67,8 +70,11 @@ def compute_score(go_set1, go_set2):
     ##########################
     ### START CODING HERE ####
     ##########################
-    
-    
+    intersec = go_set1.intersection(go_set2)  # new set with elements common to go_set1 and go_set2
+    union = go_set1.union(go_set2)  # new set with elements from both go_set1 and go_set2
+    if len(union) != 0:
+        return float(len(intersec))/len(union)
+    return 0.0
     ########################
     ### END CODING HERE ####
     ########################
@@ -82,7 +88,14 @@ def compute_similarity(score, threshold1, threshold2):
     ##########################
     ### START CODING HERE ####
     ##########################
-    
+    if score < threshold1:
+        return "different"
+    elif threshold1 <= score < threshold2:
+        return "ambiguous"
+    elif score >= threshold2:
+        return "similar"
+    else:
+        return "IS THIS EVEN A PROTEIN?"
     
     ########################
     ### END CODING HERE ####
@@ -96,8 +109,10 @@ def compute_pairs(proteins_list):
     ##########################
     ### START CODING HERE ####
     ##########################
-    
-    
+    for i in range(len(proteins_list)):
+        for j in range(len(proteins_list)):
+            if proteins_list[i] != proteins_list[j]:
+                pairs_list.append((proteins_list[i], proteins_list[j]))
     ########################
     ### END CODING HERE ####
     ########################

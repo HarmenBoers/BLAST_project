@@ -73,7 +73,7 @@ def compute_score(go_set1, go_set2):
     intersec = go_set1.intersection(go_set2)  # new set with elements common to go_set1 and go_set2
     union = go_set1.union(go_set2)  # new set with elements from both go_set1 and go_set2
     if len(union) != 0:
-        return float(len(intersec))/len(union)
+        return float(len(intersec))/len(union) # Jaccard is 1 - this?
     return 0.0
     ########################
     ### END CODING HERE ####

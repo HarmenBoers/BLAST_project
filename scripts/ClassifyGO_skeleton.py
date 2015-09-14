@@ -111,7 +111,10 @@ def compute_pairs(proteins_list):
     ##########################
     for i in range(len(proteins_list)):
         for j in range(len(proteins_list)):
-            if proteins_list[i] != proteins_list[j]:
+            #Prevent a double selection of protein pairs (A-B == B-A)
+            if i <= j:
+                continue
+            else:
                 pairs_list.append((proteins_list[i], proteins_list[j]))
     ########################
     ### END CODING HERE ####

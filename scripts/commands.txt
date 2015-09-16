@@ -1,0 +1,25 @@
+All commands suppose that you are in the scripts directory
+
+---
+
+python FetchSequences.py ../data/UniProt_ID_list.txt ../db/all_seq.fasta ../queries/
+
+formatdb -i ../db/all_seq.fasta
+
+ python RunLocalBlast.py -l ../data/UniProt_ID_list.txt -q ../queries/ -d ../db/all_seq.fasta -o ../results/all_seq_blast.out -t 0
+
+python RunLocalBlast.py -l ../data/UniProt_ID_list.txt -q ../queries/ -d ../db/all_seq.fasta -o ../results/all_seq_psiblast.out -t 1
+
+python ClassifyGO.py ../data/UniProt_ID_list.txt ../results/go.out 0.14 0.27
+
+python CreateROCPlot.py ../results/all_seq_blast.out ../results/go.out
+
+python CreateROCPlot.py ../results/all_seq_psiblast.out ../results/go.out 
+
+---
+
+python FetchSequences.py ../data/random/Human_1000_UniProt_ID_list.txt ../db/random/all_seq.fasta ../queries/random/
+
+ python ClassifyGO.py ../data/random/Human_1000_UniProt_ID_list.txt ../results/random/go.out 0 1
+ 
+rscript GORandomDistribution.R ../results/random/go.out

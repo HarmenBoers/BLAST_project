@@ -1,9 +1,0 @@
-
-========================[ Sep 14, 2015 12:20 PM ]========================
-ERROR: [000.000] No database name was specified
-
-========================[ Sep 14, 2015 12:20 PM ]========================
-Version 2.2.26 [Sep-21-2011]
-Started database file "human_random.fasta"
-Formatted 1000 sequences in volume 0
-SUCCESS: formatted database human_random.fasta

@@ -23,42 +23,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ClassifyGO_skeleton.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/ClassifyGO_skeleton.py">
+      <file leaf-file-name="CreateROCPlot.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/CreateROCPlot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="156" column="17" selection-start="5905" selection-end="5918" vertical-scroll-proportion="0.0" vertical-offset="691" max-vertical-offset="2490">
-              <folding>
-                <element signature="e#19#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FetchSequences_skeleton.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/FetchSequences_skeleton.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="85" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="224" max-vertical-offset="870">
+            <state line="146" column="62" selection-start="5699" selection-end="5699" vertical-scroll-proportion="0.73867595" vertical-offset="1509" max-vertical-offset="2385">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RunLocalBlast_skeleton.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/RunLocalBlast_skeleton.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="0" selection-start="4719" selection-end="4719" vertical-scroll-proportion="0.0" vertical-offset="2084" max-vertical-offset="2730">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateROCPlot_skeleton.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/CreateROCPlot_skeleton.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="26" selection-start="2108" selection-end="2108" vertical-scroll-proportion="0.08952959" vertical-offset="826" max-vertical-offset="2340">
-              <folding>
-                <element signature="e#211#242#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -77,13 +46,14 @@
         <option value="$PROJECT_DIR$/scripts/RunLocalBlast_skeleton.py" />
         <option value="$PROJECT_DIR$/scripts/ClassifyGO_skeleton.py" />
         <option value="$PROJECT_DIR$/scripts/CreateROCPlot_skeleton.py" />
+        <option value="$PROJECT_DIR$/scripts/CreateROCPlot.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="777" />
+    <option name="width" value="1680" />
+    <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -342,14 +312,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="979" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18927065" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -381,104 +351,10 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/ClassifyGO_skeleton.py">
+    <entry file="file://$PROJECT_DIR$/scripts/CreateROCPlot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="14" selection-start="2958" selection-end="2958" vertical-scroll-proportion="0.0" vertical-offset="1140" max-vertical-offset="2490">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/FetchSequences_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="85" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="885">
+        <state line="146" column="62" selection-start="5699" selection-end="5699" vertical-scroll-proportion="0.73867595" vertical-offset="1509" max-vertical-offset="2385">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/RunLocalBlast_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="38" selection-start="2643" selection-end="2643" vertical-scroll-proportion="0.0" vertical-offset="915" max-vertical-offset="2775">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ClassifyGO_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="9" selection-start="3696" selection-end="3696" vertical-scroll-proportion="0.0" vertical-offset="1065" max-vertical-offset="2445">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/FetchSequences_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="12" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/RunLocalBlast_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="25" selection-start="3122" selection-end="3122" vertical-scroll-proportion="0.0" vertical-offset="1080" max-vertical-offset="2775">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ClassifyGO_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="35" selection-start="1171" selection-end="1171" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="2220">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/FetchSequences_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="12" selection-start="1448" selection-end="1448" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/RunLocalBlast_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="8" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2640">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/FetchSequences_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="85" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ClassifyGO_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="156" column="17" selection-start="5905" selection-end="5918" vertical-scroll-proportion="0.0" vertical-offset="691" max-vertical-offset="2490">
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/RunLocalBlast_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="0" selection-start="4719" selection-end="4719" vertical-scroll-proportion="0.0" vertical-offset="2084" max-vertical-offset="2730">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/CreateROCPlot_skeleton.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="26" selection-start="2108" selection-end="2108" vertical-scroll-proportion="0.08952959" vertical-offset="826" max-vertical-offset="2340">
-          <folding>
-            <element signature="e#211#242#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

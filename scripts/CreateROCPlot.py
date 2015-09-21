@@ -127,8 +127,8 @@ def integrate(x,y):
     # auc = 0
     # for i in xrange(len(x)-1):
     #     auc += (x[i+1] - x[i]) * ((y[i] + y[i + 1]) / 2)
-    # #print auc
     auc = metrics.auc(x, y, reorder=True)
+    print auc
     return auc
     #########################
     ###  END CODING HERE  ###
@@ -144,6 +144,12 @@ def main():
 
     print integrate(x,y)
     #print(x,y)
+    fh = open("/Users/harmen/PycharmProjects/blast_project/psiblast_rocplot.txt", "w")
+    fh.write("x\ty\n")
+    for i in range(len(x)):
+        fh.write(str(x[i]) + "\t" + str(y[i]) + "\n")
+    fh.close()
+
     pylab.plot(x,y)
     pylab.show()
 

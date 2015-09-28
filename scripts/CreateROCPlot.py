@@ -77,6 +77,7 @@ def roc_plots(blast_evalues, benchmark_dict):
     false_positive_rate = [0] # FP/(FP/TN), x-axis
     prev_evalue = -1.
     first = True
+    lowest_pair = dict()
     for item in sorted_blast:
         # We have not counted TP, FP, TN and FN yet, so at first iteration, don't update TPR and FPR
         if prev_evalue != blast_evalues[item[0]] and not first:
@@ -105,7 +106,7 @@ def roc_plots(blast_evalues, benchmark_dict):
         #If GO is diffenrt and BLAST is above threshold
         if benchmark_dict[item[0]] == "different" and float(item[1]) < blast_threshold:
             false_positives += 1
-
+            lowest_pair[item[0]] = item[1]
         #########################
         ###  END CODING HERE  ###
         #########################
@@ -118,6 +119,12 @@ def roc_plots(blast_evalues, benchmark_dict):
 
     true_positive_rate.append(true_positives/float(true_positives + false_negatives))
     false_positive_rate.append(false_positives/float(false_positives + true_negatives))
+    sorted_pair = sorted(lowest_pair.items(), key=itemgetter(1))
+    fh = open("/Users/harmen/PycharmProjects/blast_project/false_positives.txt", "w")
+    for i in range(len(sorted_pair)):
+        fh.write(str(sorted_pair[i][0]) + "\t" + str(sorted_pair[i][1]) + "\n")
+    #print(sorted_pair[0:])
+    fh.close()
     return false_positive_rate, true_positive_rate
 
 def integrate(x,y):
@@ -149,9 +156,9 @@ def main():
     for i in range(len(x)):
         fh.write(str(x[i]) + "\t" + str(y[i]) + "\n")
     fh.close()
-
-    pylab.plot(x,y)
-    pylab.show()
+    #
+    # pylab.plot(x,y)
+    # pylab.show()
 
 if __name__ == "__main__":
     main()

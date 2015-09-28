@@ -1,6 +1,6 @@
 library(ggplot2)
 
-pdf("/Users/harmen/PycharmProjects/blast_project/results/roc_plots.pdf")
+pdf("/Users/harmen/PycharmProjects/blast_project/results/roc_plot_psiblast.pdf")
 ########### PSI-BLAST VS GO ########## AUC = 0.91
 coor <- read.table("/Users/harmen/PycharmProjects/blast_project/roc_plot.txt", header=T)
 
@@ -11,8 +11,8 @@ roc <-ggplot(data=coor, aes(x=x, y=y, group=1)) +
       xlab("False Positive Rate") + ylab("True Positive Rate") +
       ggtitle("PSI-BLAST benchmarked using GO AUC = 0.91")
 plot(roc)
-
-
+dev.off()
+pdf("/Users/harmen/PycharmProjects/blast_project/results/roc_plot_blast.pdf")
 ########## BLAST VS GO ############ AUC = 0.86
 coor <- read.table("/Users/harmen/PycharmProjects/blast_project/blast_rocplot.txt", header=T)
 

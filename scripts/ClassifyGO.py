@@ -70,11 +70,13 @@ def compute_score(go_set1, go_set2):
     ##########################
     ### START CODING HERE ####
     ##########################
+    if len(go_set1) == 0 or len(go_set2) == 0:
+        return None
     intersec = go_set1.intersection(go_set2)  # new set with elements common to go_set1 and go_set2
     union = go_set1.union(go_set2)  # new set with elements from both go_set1 and go_set2
     if len(union) != 0:
         return float(len(intersec))/len(union) # Jaccard is 1 - this?
-    return 0.0
+    return None
     ########################
     ### END CODING HERE ####
     ########################
@@ -88,7 +90,10 @@ def compute_similarity(score, threshold1, threshold2):
     ##########################
     ### START CODING HERE ####
     ##########################
-    if score < threshold1:
+    if score is None:
+        print 'Am'
+        return "ambiguous"
+    elif score < threshold1:
         return "different"
     elif threshold1 <= score < threshold2:
         return "ambiguous"

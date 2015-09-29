@@ -23,7 +23,7 @@ def Blast(query, db, psiblast):
         ##########################
         # Define the variable 'cmd' as a string with the command for BLASTing 'query' against the specified database 'db'.
         # Note that it is is easier to parse the output if the output is in tabular format (add option -m 9 or -m 8).
-        cmd = "blastall -p blastp -i " + query + " -d" + db + " -m 9"
+        cmd = "blastall -p blastp -i " + query + " -d" + db + " -m 9 -e 10000"
         
         ##########################
         ###  END CODING HERE  ####
@@ -34,7 +34,7 @@ def Blast(query, db, psiblast):
         ##########################
         # Define the variable 'cmd' as a string with the command for PSI-BLASTing 'query' against the specified database 'db'.
         # Note that it is is easier to parse the output if the output is in tabular format (add option -m 9 or -m 8).
-        cmd = "blastpgp -j 3 -i " + query + " -d" + db + " -m 9"
+        cmd = "blastpgp -j 3 -i " + query + " -d" + db + " -m 9 -e 10000"
         
         ##########################
         ###  END CODING HERE  ####

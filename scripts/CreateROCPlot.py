@@ -142,13 +142,14 @@ def main():
     x, y              = roc_plots(blast_evalues, benchmark_results)
     auc = integrate(x,y)
     print auc
+    return(auc)
 
     #Always write a rocplot table in the current working directory to create a plot using R for example
-    fh = open(os.getcwd()+"/blast_rocplot.txt", "w")
-    fh.write("x\ty\n")
-    for i in range(len(x)):
-        fh.write(str(x[i]) + "\t" + str(y[i]) + "\n")
-    fh.close()
+    # fh = open(os.getcwd()+"/blast_rocplot.txt", "w")
+    # fh.write("x\ty\n")
+    # for i in range(len(x)):
+    #     fh.write(str(x[i]) + "\t" + str(y[i]) + "\n")
+    # fh.close()
     # pylab.plot(x,y)
     # pylab.show()
 

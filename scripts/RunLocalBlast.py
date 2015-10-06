@@ -88,8 +88,7 @@ def plotEValueDistribution(blast_dict):
     ### START CODING HERE ####
     ##########################
     # Calculate the number of e-values lower than threshold.
-    
-    
+    # We did this in R
     ##########################
     ###  END CODING HERE  ####
     ##########################
@@ -163,10 +162,8 @@ def main():
         # Run (PSI-)BLAST for all query proteins.
         # Store all the uniprot IDs in the uniprot_ids.
         # Parse and store the blast result in the blast_dict.
-        #print(qry)
         uniprot_ids.append(qry)
         qry = query_folder+qry+".fasta"
-
         parseBlastResult(Blast(qry, db, psiblast), blast_dict)
         ##########################
         ###  END CODING HERE  ####

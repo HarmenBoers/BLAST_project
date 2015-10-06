@@ -23,10 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CreateROCPlot.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="go_assignment.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../go_assignment/go_assignment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7342889" vertical-offset="666" max-vertical-offset="1635">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateROCPlot.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/CreateROCPlot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="59" selection-start="7137" selection-end="7137" vertical-scroll-proportion="4.2109256" vertical-offset="0" max-vertical-offset="3015">
+            <state line="151" column="41" selection-start="5212" selection-end="5225" vertical-scroll-proportion="0.0" vertical-offset="1879" max-vertical-offset="2490">
               <folding>
                 <element signature="e#211#242#0" expanded="true" />
               </folding>
@@ -37,7 +46,18 @@
       <file leaf-file-name="ClassifyGO.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/ClassifyGO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="15" selection-start="3026" selection-end="3026" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="2535">
+            <state line="134" column="74" selection-start="4953" selection-end="4953" vertical-scroll-proportion="0.0" vertical-offset="1969" max-vertical-offset="2580">
+              <folding>
+                <element signature="e#19#28#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GO_assignment.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/GO_assignment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
               <folding />
             </state>
           </provider>
@@ -46,7 +66,7 @@
       <file leaf-file-name="RunLocalBlast.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/RunLocalBlast.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="31" selection-start="7033" selection-end="7033" vertical-scroll-proportion="0.0" vertical-offset="1686" max-vertical-offset="2730">
+            <state line="92" column="30" selection-start="4008" selection-end="4008" vertical-scroll-proportion="0.0" vertical-offset="1759" max-vertical-offset="2685">
               <folding />
             </state>
           </provider>
@@ -66,16 +86,18 @@
         <option value="$PROJECT_DIR$/scripts/RunLocalBlast_skeleton.py" />
         <option value="$PROJECT_DIR$/scripts/ClassifyGO_skeleton.py" />
         <option value="$PROJECT_DIR$/scripts/CreateROCPlot_skeleton.py" />
-        <option value="$PROJECT_DIR$/scripts/RunLocalBlast.py" />
+        <option value="$PROJECT_DIR$/scripts/GO_assignment.py" />
         <option value="$PROJECT_DIR$/scripts/ClassifyGO.py" />
         <option value="$PROJECT_DIR$/scripts/CreateROCPlot.py" />
+        <option value="$PROJECT_DIR$/scripts/RunLocalBlast.py" />
+        <option value="$PROJECT_DIR$/../go_assignment/go_assignment.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="777" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -122,20 +144,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BLAST_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blast_project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -146,7 +154,7 @@
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../go_assignment" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -334,14 +342,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1680" height="1027" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12537673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39932507" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -349,11 +357,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -373,26 +381,81 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/scripts/CreateROCPlot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="59" selection-start="7137" selection-end="7137" vertical-scroll-proportion="0.0" vertical-offset="495" max-vertical-offset="3015">
+          <folding>
+            <element signature="e#211#242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/ClassifyGO.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="15" selection-start="3026" selection-end="3026" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="2535">
+        <state line="81" column="28" selection-start="3113" selection-end="3113" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="2565">
+          <folding>
+            <element signature="e#19#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/GO_assignment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="120">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/RunLocalBlast.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="31" selection-start="7033" selection-end="7033" vertical-scroll-proportion="0.0" vertical-offset="1686" max-vertical-offset="2730">
+        <state line="166" column="31" selection-start="7033" selection-end="7033" vertical-scroll-proportion="0.0" vertical-offset="2490" max-vertical-offset="2775">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/ClassifyGO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="74" selection-start="4953" selection-end="4953" vertical-scroll-proportion="0.0" vertical-offset="1969" max-vertical-offset="2580">
+          <folding>
+            <element signature="e#19#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/GO_assignment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/go_distribution.R">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1440">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/RunLocalBlast.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="30" selection-start="4008" selection-end="4008" vertical-scroll-proportion="0.0" vertical-offset="1759" max-vertical-offset="2685">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/CreateROCPlot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="59" selection-start="7137" selection-end="7137" vertical-scroll-proportion="4.2109256" vertical-offset="0" max-vertical-offset="3015">
+        <state line="151" column="41" selection-start="5212" selection-end="5225" vertical-scroll-proportion="0.0" vertical-offset="1879" max-vertical-offset="2490">
           <folding>
             <element signature="e#211#242#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../go_assignment/go_assignment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.7342889" vertical-offset="666" max-vertical-offset="1605">
+          <folding />
         </state>
       </provider>
     </entry>

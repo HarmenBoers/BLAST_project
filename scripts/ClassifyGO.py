@@ -49,8 +49,11 @@ def retrieve_go_terms(protein_list,cachefile):
 
     return go_dict
 
-# The following function returns the list of UniProt IDs contained in the file 'filename'.
+
 def parse(filename):
+    '''
+    The following function returns the list of UniProt IDs contained in the file 'filename'.
+    '''
     proteins_list = list()
     ##########################
     ### START CODING HERE ####
@@ -65,8 +68,11 @@ def parse(filename):
     #print(proteins_list)
     return proteins_list
 
-# Given two sets of GO terms this function computes the score function.
+
 def compute_score(go_set1, go_set2):
+    '''
+    Given two sets of GO terms this function computes the score function.
+    '''
     ##########################
     ### START CODING HERE ####
     ##########################
@@ -75,7 +81,7 @@ def compute_score(go_set1, go_set2):
     intersec = go_set1.intersection(go_set2)  # new set with elements common to go_set1 and go_set2
     union = go_set1.union(go_set2)  # new set with elements from both go_set1 and go_set2
     if len(union) != 0:
-        return float(len(intersec))/len(union) # Jaccard is 1 - this?
+        return float(len(intersec))/len(union)
     return None
     ########################
     ### END CODING HERE ####
@@ -91,7 +97,6 @@ def compute_similarity(score, threshold1, threshold2):
     ### START CODING HERE ####
     ##########################
     if score is None:
-        print 'Am'
         return "ambiguous"
     elif score < threshold1:
         return "different"
@@ -99,16 +104,12 @@ def compute_similarity(score, threshold1, threshold2):
         return "ambiguous"
     elif score >= threshold2:
         return "similar"
-    else:
-        return "IS THIS EVEN A PROTEIN?"
     
     ########################
     ### END CODING HERE ####
     ########################
 
 # The following function returns a list containing all unique protein pairs.
-# You can add a pair of proteins to the list using the following code:
-# pairs_list.append((protein1, protein2))
 def compute_pairs(proteins_list):
     pairs_list = list()
     ##########################

@@ -4,7 +4,7 @@
 # It then creates the corresponding ROC plot, and calculates the AUC.
 
 from operator import itemgetter
-import pylab
+#import pylab
 import sys
 import os
 
@@ -56,54 +56,48 @@ def parse_benchmark_results(filename):
 
 
 def roc_plots(blast_evalues, benchmark_dict):
-    sorted_blast = sorted(blast_evalues.items(), key=itemgetter(1))
+    
+    # Initialize returned variables
+    coverage  = [0]
+    error = [0]
+    #lowest_pair = dict()
+        
+    # Reverse blast_evalues dictionnary to allow iteration on unique evalues
+    inv_evalues = {}
+    for k, v in blast_evalues.iteritems():
+        v = float(v)
+        inv_evalues[v] = inv_evalues.get(v, [])
+        inv_evalues[v].append(k)
+    sorted_evalues = sorted(inv_evalues.keys())
+        
+    # First E-value threshold is lowest observed E-value
+    # Every pair is considered as being negative according to BLAST
+    # True positives are the number of similar pairs according to benchmark
+    # False positives are the number of different pairs according to benchmark
+    tn = benchmark_dict.values().count('similar') # True negative
+    fn = benchmark_dict.values().count('different') # False negative
+    tp = 0 # True positive
+    fp = 0 # False positive
 
-    # For evalue threshold=0, true and false positive rate are both 0
-    true_positive_rate  = [0] # TP/(TP+FN), y-axis
-    false_positive_rate = [0] # FP/(FP/TN), x-axis
-    lowest_pair = dict()
+    # Iterate through every unique E-value observed
+    for evalue in sorted_evalues:
+        
+        proteins = inv_evalues[evalue]            
+        benchmark = [benchmark_dict[p] for p in proteins]
+        similar = benchmark.count('similar')
+        different = benchmark.count('different')
 
-    unique_evalue = sorted(set(blast_evalues.values()))
-    print(len(unique_evalue))
-    for threshold in unique_evalue:
-        false_negatives = 0
-        true_negatives = 0
-        true_positives = 0
-        false_positives = 0
-        threshold = float(threshold)
+        # Update true positive/negatives and false positive/negatives
+        tn -= similar
+        fp += similar
+        tp += different
+        fn -= different
+        
+        # Compute coverage and error
+        coverage.append(float(tp) / (tp + fn))
+        error.append(float(fp) / (fp + tn))
 
-        for prot in sorted_blast:
-
-            #IF GO is similar and BLAST is above threshold = FN
-            if benchmark_dict[prot[0]] == "similar" and float(prot[1]) > threshold:
-                false_negatives += 1
-
-            #IF GO different and BLAST is below threshold = TN
-
-            elif benchmark_dict[prot[0]] == "different" and float(prot[1]) > threshold:
-                true_negatives += 1
-
-            #IF GO is similar and BLAST is above threshold = TP
-            elif benchmark_dict[prot[0]] == "similar" and float(prot[1]) <= threshold:
-                true_positives += 1
-
-            #If GO is different and BLAST is above threshold = FP
-            elif benchmark_dict[prot[0]] == "different" and float(prot[1]) <= threshold:
-                false_positives += 1
-                lowest_pair[prot[0]] = prot[1]
-
-        true_positive_rate.append(true_positives / float(true_positives + false_negatives))
-        false_positive_rate.append(false_positives / float(false_positives + true_negatives))
-
-    #Always write a false_positives.txt sorted list to check whether there are any false false positives.
-    # As asked in Q4.3
-    sorted_pair = sorted(lowest_pair.items(), key=itemgetter(1))
-    fh = open(os.getcwd() + "/false_positives.txt", "w")
-    for i in range(len(sorted_pair)):
-        fh.write(str(sorted_pair[i][0]) + "\t" + str(sorted_pair[i][1]) + "\n")
-    fh.close()
-
-    return false_positive_rate, true_positive_rate
+    return coverage, error
 
 
 def integrate(x,y):
@@ -146,7 +140,8 @@ def main():
     blast_evalues     = parse_blast_results(blast_results_file)
     benchmark_results = parse_benchmark_results(benchmark_results_file)
     x, y              = roc_plots(blast_evalues, benchmark_results)
-    print integrate(x,y)
+    auc = integrate(x,y)
+    print auc
 
     #Always write a rocplot table in the current working directory to create a plot using R for example
     fh = open(os.getcwd()+"/blast_rocplot.txt", "w")

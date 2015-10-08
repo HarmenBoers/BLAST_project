@@ -32,6 +32,7 @@ def retrieve_go_terms(protein_list,cachefile):
     else:
         with open(cachefile) as f:
             go_data = f.read()
+        f.close()
     
     # Define the output dictionary and its keys.
     go_dict = dict()

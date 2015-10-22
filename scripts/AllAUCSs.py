@@ -47,8 +47,8 @@ roc_cmd = ['python', create_roc_plot, blast_file, go_file]
 # Main
 out = open(output_file, 'w')
 auc_list = []
-for i in xrange(1,101,):
-    for j in xrange(1,101):
+for i in xrange(1,101,5):
+    for j in xrange(1,101,5):
         if i >= j: continue
         t1 = str(float(i)/100)
         t2 = str(float(j)/100)

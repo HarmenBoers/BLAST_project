@@ -72,10 +72,10 @@ def roc_plots(blast_evalues, benchmark_dict):
         
     # First E-value threshold is lowest observed E-value
     # Every pair is considered as being negative according to BLAST
-    # True positives are the number of similar pairs according to benchmark
-    # False positives are the number of different pairs according to benchmark
-    tn = benchmark_dict.values().count('similar') # True negative
-    fn = benchmark_dict.values().count('different') # False negative
+    # True negatives are the number of similar pairs according to benchmark
+    # False negatives are the number of different pairs according to benchmark
+    tn = benchmark_dict.values().count('different') # True negative
+    fn = benchmark_dict.values().count('similar') # False negative
     tp = 0 # True positive
     fp = 0 # False positive
 
@@ -88,18 +88,17 @@ def roc_plots(blast_evalues, benchmark_dict):
         different = benchmark.count('different')
 
         # Update true positive/negatives and false positive/negatives
-        tn -= similar
-        fp += similar
-        tp += different
-        fn -= different
+        tp += similar
+        fn -= similar
+        tn -= different
+        fp += different
         
         # Compute coverage and error
         coverage.append(float(tp) / (tp + fn))
         error.append(float(fp) / (fp + tn))
 
-    return coverage, error
-
-
+    return error, coverage
+    
 def integrate(x,y):
     #########################
     ### START CODING HERE ###
@@ -118,16 +117,9 @@ def integrate(x,y):
         print 'Error: Integrate arguments are invalid'
         return None
 
-    f = {k:v for k, v in zip(x,y)} # Function reprensentation
     auc = 0.0 # Area under the curve
-    xs = sorted(x)
-
-    # Sum each trapezoid
-    for i in xrange(len(x) - 1):
-        a = xs[i]
-        b = xs[i+1]
-        auc += (b - a) * ((f[a] + f[b]) / 2)
-
+    for i in xrange(0, len(x)-1): # Sum each trapezoid
+        auc += (x[i+1] - x[i]) * ((y[i] + y[i+1]) / 2)
     return auc
     #########################
     ###  END CODING HERE  ###
@@ -142,7 +134,7 @@ def main():
     x, y              = roc_plots(blast_evalues, benchmark_results)
     auc = integrate(x,y)
     print auc
-    return(auc)
+    return auc
 
     #Always write a rocplot table in the current working directory to create a plot using R for example
     # fh = open(os.getcwd()+"/blast_rocplot.txt", "w")
